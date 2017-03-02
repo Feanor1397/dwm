@@ -2,6 +2,13 @@
 /* See LICENSE file for copyright and license details. */
 
 #include "rules.h"
+#include <X11/XF86keysm.h>
+
+#define MPD_CONTROL       /* Comment this if you dont need mpd support */
+
+#ifdef MPD_CONTROL
+#include "mpd.c"
+#endif
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */

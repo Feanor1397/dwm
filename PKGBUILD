@@ -1,6 +1,7 @@
 pkgname=dwm
 _pkgname=dwm
-pkgver=6.1.24
+_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+pkgver=6.1.16.gbe90618
 pkgrel=1
 pkgdesc="A dynamic window manager for X"
 url="http://dwm.suckless.org"
@@ -13,7 +14,7 @@ provides=('dwm')
 conflicts=('dwm')
 source=(dwm.desktop
         config.h
-        "$pkgname::git+https://github.com/Feanor1397/dwm#branch=master")
+        "$pkgname::git+file://${_DIR}#branch=master")
 md5sums=('939f403a71b6e85261d09fc3412269ee'
          'SKIP'
          'SKIP')
