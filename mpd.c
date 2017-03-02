@@ -26,7 +26,7 @@ struct mpd_connection *get_conn(){
     return NULL;
   }
 
-  return NULL;
+  return c;
 }
 
 void mpd_stop(struct mpd_connection *c) {
@@ -168,6 +168,9 @@ void mpd_volume(struct mpd_connection *c, const Arg *arg){
 void mpd_control(const Arg *arg){
   struct mpd_connection *c;
   c = get_conn();
+  if (c == NULL) {
+    return;
+  }
   switch(arg->i) {
     case MpdNext:
       mpd_next(c);
