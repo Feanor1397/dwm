@@ -21,7 +21,7 @@ necessary as root):
 
     make clean install
 
-Note than you need specify X11 headers and libs directories like this:
+Note that you need specify X11 headers and libs directories like this:
 
     make X11INC=/usr/include/X11 X11LIB=/usr/lib/X11 clean install
 
@@ -42,13 +42,13 @@ the DISPLAY environment variable is set correctly, e.g.:
 In order to display status info in the bar, you can do something
 like this in your .xinitrc:
 
-    ```shell
-    while xsetroot -name "`date` `uptime | sed 's/.*,//'`"
-    do
-    	sleep 1
-    done &
-    exec dwm
-    ```
+```shell
+while xsetroot -name "`date` `uptime | sed 's/.*,//'`"
+do
+	sleep 1
+done &
+exec dwm
+```
 
 Configuration
 -------------
