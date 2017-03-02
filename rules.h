@@ -4,7 +4,8 @@ static const Rule rules[] = {
    *  WM_NAME(STRING) = title
    */
   /* class      instance    title       tags mask     isfloating   monitor */
-  { "Steam",    NULL,       NULL,       1,            True,        -1 },
-  { "Steam",    NULL,       "Steam",    1,            False,       -1 },
+  { "Steam",    "Steam",    NULL,       1,            True,        -1 },
+  { "Steam",    "Steam",    "Steam",    1,            False,       -1 },
+  { "Chromium", "chromium", NULL,       1<<3,         False,       -1 },
 };
 
