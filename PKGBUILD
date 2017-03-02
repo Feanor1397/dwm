@@ -1,7 +1,7 @@
 pkgname=dwm
 _pkgname=dwm
 _DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-pkgver=6.1.25.g7e4fd2b
+pkgver=6.1.26.g5bd6ae9
 pkgrel=1
 pkgdesc="A dynamic window manager for X"
 url="http://dwm.suckless.org"
